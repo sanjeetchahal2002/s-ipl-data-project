@@ -16,7 +16,7 @@ const economicalBowlerInSuperOver = require('../server/9-BowlerWithBestEconomySu
 
 const result1 = matchesPerYear(matchData)
 const result2 = matchesPerTeamPerYear(matchData)
-const result3 = extraRuns(matchData,deliveryData)
+const result3 = extraRuns(matchData,deliveryData,'2016')
 const result4 = ecnomicalBowler(matchData,deliveryData)
 const result5 = teamWinTossAndMatch(matchData)
 const result6 = playerWithMaxAwards(matchData)

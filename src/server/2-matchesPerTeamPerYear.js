@@ -1,4 +1,3 @@
-
 function matchesPerTeamPerYear(matches) {
     let result = {}
     matches.forEach((element) => {
@@ -19,5 +18,4 @@ function matchesPerTeamPerYear(matches) {
     return result
     
 }
-
 module.exports = matchesPerTeamPerYear

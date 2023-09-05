@@ -14,5 +14,4 @@ function winTossAndMatch(matchData){
     });
     return result
 }
-winTossAndMatch(matchData)
 module.exports = winTossAndMatch

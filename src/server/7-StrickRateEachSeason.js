@@ -1,4 +1,5 @@
-
+const matchData = require('../data/matchesJson.json')
+const delyData = require('../data/delyJson.json')
 function strickRate(matchData,delyData){
     let matchRequired = {}
     let batsManData = {}
@@ -38,5 +39,5 @@ function strickRate(matchData,delyData){
     }
     return result
 }
-
+strickRate(matchData,delyData)
 module.exports = strickRate
