@@ -11,11 +11,12 @@ const sample = [
   { winner: "Kings XI Punjab", toss_winner: "Sunrisers Hyderabad" },
 ];
 
-test("number of times each team won the toss and won the match", () => {
-  expect(winTossAndMatch(sample)).toMatchObject({
-    'Kolkata Knight Riders': 1,
-    'Sunrisers Hyderabad': 1,
-    'Kings XI Punjab': 2,
+describe("number of times each team won the toss and won the match", () => {
+  it("test case 1", () => {
+    expect(winTossAndMatch(sample)).toStrictEqual({
+      'Kolkata Knight Riders': 1,
+      'Sunrisers Hyderabad': 1,
+      'Kings XI Punjab': 2,
+    });
   });
 });
-

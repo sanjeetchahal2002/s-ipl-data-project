@@ -20,7 +20,6 @@ function economicalBowlerInSuperOver(delyData){
         result[bowler] =( (bowlerData[bowler].runs/bowlerData[bowler].bowls)*6).toFixed(2)  
     }
     result = Object.entries(result)
-    console.log(result)
     return result
 }
 module.exports = economicalBowlerInSuperOver

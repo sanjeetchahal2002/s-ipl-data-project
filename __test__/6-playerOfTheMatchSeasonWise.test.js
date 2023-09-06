@@ -22,12 +22,13 @@ const sampleMatches = [
   { season: "2013", player_of_match: "Mike" },
 ];
 
-test("highest player of the match for each season", () => {
-  expect(playerOftheMatch(sampleMatches)).toMatchObject({
+describe("highest player of the match for each season", () => {
+  it("test case 1", () => {
+    expect(playerOftheMatch(sampleMatches)).toStrictEqual({
     '2010': { maxPlayerWithAwards: 'David', maxAwards: 2 },
     '2011': { maxPlayerWithAwards: 'Steve', maxAwards: 3 },
     '2012': { maxPlayerWithAwards: 'John', maxAwards: 2 },
     '2013': { maxPlayerWithAwards: 'David', maxAwards: 2 }
+    });
   });
 });
-

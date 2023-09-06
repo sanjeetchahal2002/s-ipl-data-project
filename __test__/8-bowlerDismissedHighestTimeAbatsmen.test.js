@@ -9,9 +9,10 @@ const sampleDeliveries = [
   { player_dismissed: "CH Gayle", bowler: "BA Stokes" },
 ];
 
-test("find player with the most dismissals", () => {
-  expect(findMaxDismissals( sampleDeliveries)).toMatchObject({
-     maxbowler: 'Rashid Khan', maxbatsman: 'KA Pollard', 'number of times': 2 
-    });
+describe("find player with the most dismissals", () => {
+  it("test case 1", () => {
+    expect(findMaxDismissals( sampleDeliveries)).toStrictEqual({
+      maxbowler: 'Rashid Khan', maxbatsman: 'KA Pollard', 'number of times': 2 
+     });
+  });
 });
-

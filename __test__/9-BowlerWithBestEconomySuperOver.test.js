@@ -10,12 +10,13 @@ const sampleDeliveries = [
   { is_super_over: "1", bowler: "BowlerA", total_runs: "9" },
 ];
 
-test("find most economical superovers bowler", () => {
-  expect(
-    findMostEconomicalSuperoversBowler(sampleDeliveries)
-  ).toMatchObject([
-    [ 'BowlerA', '45.00' ],
-    [ 'BowlerB', '39.00' ],
-    [ 'BowlerC', '42.00' ]
-  ]);
+
+describe("find most economical superovers bowler", () => {
+  it("test case 1", () => {
+    expect(findMostEconomicalSuperoversBowler(sampleDeliveries)).toStrictEqual([
+      [ 'BowlerA', '45.00' ],
+      [ 'BowlerB', '39.00' ],
+      [ 'BowlerC', '42.00' ]
+    ]);
+  });
 });
